@@ -6,10 +6,10 @@ var app = express();//CREATE WEB SERVER
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+ 
 });
-app.get('/article-one', function (req, res) { 
-  res.send('article one is requested and will be send to server');
+app.get('/pro1', function (req, res) { 
+  res.sendFile(path.join(__dirname, 'ui', 'pro1.html'));
 });
 
 app.get('/article-two', function (req, res) { 
